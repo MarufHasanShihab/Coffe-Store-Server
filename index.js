@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require('express')
 const cors = require("cors");
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 require('dotenv').config();
@@ -8,7 +8,7 @@ const port = process.env.PORT || 5000;
 // middleware
 app.use(cors());
 app.use(cors({
-  origin: 'https://coffe-store-server-bbf2iayb8-maruf-hasan-shihabs-projects.vercel.app/', // Allow requests from this origin
+  origin: 'https://coffe-store-server-bbf2iayb8-maruf-hasan-shihabs-projects.vercel.app', // Allow requests from this origin
   methods: 'GET,POST,PUT,DELETE',
   credentials: true // If using cookies or authentication
 }))
